@@ -1,15 +1,22 @@
-# Add comments before you do anything else.
-
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Darcy McLaughlin
+# Date: 4/11/2026
 # Purpose: Create Sets.
 # Usage: ./lab6a.py
 
 # TO DO 1: Complete the functions below.
 
+#s3 which contains numbers between 0 and 100 which are divisible by 3.
+# s5 which contains numbers between 0 and 100 which are divisible by 5.
+# s7 which contains numbers between 0 and 100 which are divisible by 7.
+# s11 which contains numbers between 0 and 100 which are divisible by 11
+
 def buildtheSet(divisor):
-    # Complete this function
+    s = set()
+    for i in range(0, 101):
+        if i % divisor == 0:
+            s.add(i)
+    return s
 def main():
 
     s3 = buildtheSet(3)
